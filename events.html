@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        /* Run the code when the page finishes loading */
+$(document).ready(function(){
+
+/* When the Show More button is clicked */ /*
+$(".btn").click(function(){
+
+/* Show or hide the extra event details */
+$(this).next(".more").slideToggle();
+
+});
+
+});
+
+    </script>
+    <style>
+        img{
+            align-items: center;
+        }
+        .more {
+  display: none; /* hidden initially */
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="home.html"></a>
+        <a href="events.html"></a>
+        <a href="register"></a>
+    </nav><br>
+    <section>
+        <img src="c:\Users\USER\OneDrive\Desktop\School\html\exam4\Cultural.png" alt="Cultural Week">
+        <h3>Cultural Week</h3>
+        <p>12/12/2026 <br></p>
+           <button class="btn">Show More</button>
+
+  <!-- Hidden extra details -->
+  <p class="more">
+    This is the most famous day at Campus Connect. Students will showcase music, food, and traditions.
+  </p>
+    </section><br><br>
+    <section>
+        <img src="c:\Users\USER\OneDrive\Desktop\School\html\exam4\sports.png" alt=" Sports Day">
+         <h3>Sports Day</h3>
+        <p>12/12/2026 <br>
+          <button type="button"  onclick="showmore()">...show more</button> </p>
+         <p id="more"></p>
+          <script>
+            function showmore(){
+document.getElementById("more").innerHTML="This is the most famouse day This is the mos famouse day at Campus Connect";                }
+    
+          </script>
+</script>
+    </section><br><br>
+    <section>
+        <img src="c:\Users\USER\OneDrive\Desktop\School\html\exam4\election.png" alt="Students Election">
+         <h3>Students Election</h3>
+        <p>12/12/2026 <br></p>
+ <button type="button"  onclick="showmore()">...show more</button>
+         <p id="more"></p>
+          <script>
+            function showmore(){
+document.getElementById("more").innerHTML="This is the most famouse day This is the mos famouse day at Campus Connect";                }
+    
+          </script>
+    </section><br><br>
+    <section>
+        <img src="c:\Users\USER\OneDrive\Desktop\School\html\exam4\planting.png" alt="Planting Day">
+         <h3>Tree Planting Day</h3>
+        <p>12/12/2026 <br></p>
+         <button type="button"  onclick="showmore()">...show more</button>
+         <p id="more"></p>
+          <script>
+            function showmore(){
+document.getElementById("more").innerHTML="This is the most famouse day This is the mos famouse day at Campus Connect";                }
+    
+          </script>
+    </section><br><br>
+</body>
+</html>

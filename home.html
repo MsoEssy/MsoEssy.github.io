@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="http"></script> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusConnect</title>
+</head>
+<body>
+    <script>
+        // slideshow
+       
+        var i = 0;
+
+function slideshow(){
+
+var slides = document.getElementsByClassName("slide");
+
+for(var x = 0; x < slides.length; x++){
+slides[x].style.display = "none";
+}
+
+i++;
+
+if(i > slides.length){
+i = 1;
+}
+
+slides[i-1].style.display = "block";
+
+setTimeout(slideshow,2000);
+
+}
+
+slideshow();
+    </script>
+    <header>
+        <h1><U>CampusConnect</U></h1>
+        <img src="c:\Users\USER\OneDrive\Desktop\School\html\exam4\logo.png" alt="logo">
+    </header> <br>
+    <nav>
+        <a href="home.html"> home</a> ||
+        <a href="events.html">events</a> ||
+        <a href="register">reister</a>
+    </nav><br>
+    <section class="banner"> 
+<img class="slide" src="c:\Users\USER\OneDrive\Desktop\School\html\exam4\sports.png" alt="pic">
+<img class="slide" src="c:\Users\USER\OneDrive\Desktop\School\html\exam4\election.png" alt="pic">
+<img class="side" src="c:\Users\USER\OneDrive\Desktop\School\html\exam4\planting.png"alt="pic">
+    </section>
+<footer>
+    <p> &copy;; 2026 Campus Connect</p>
+    <section class="banner">
+        <p>0952803901 ||
+            <img width="20px" height="20px" src="c:\Users\USER\OneDrive\Desktop\School\html\exam4\whatsapp2.png" alt="">
+        </p>
+        </section>
+    <p> Instagram | facebook | whatsapp</p>
+</footer>
+</body>
+</html>
