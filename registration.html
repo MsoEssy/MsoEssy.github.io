@@ -3,31 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" "></script>
-    <script>
-        $
-    </script>
-</head>
-<body>
-    <nav>
-        <a href="home.html"></a>
-        <a href="events.html"></a>
-        <a href="register"></a>
-    </nav><br>
-    <form action="">
-        <label>Student Admission Number</label><br>
-  <input type="text"><br><br>
-  <label>Name</label><br>
-  <input type="text"><br><br>
-   <label>Select Event</label><br>
-  <select id="event">
-    <option value="cultural">Cultural Week</option>
-    <option value="sports">Sports Day</option>
-    <option value="election">Students' Election</option>
-    <option value="tree">Tree Planting Day</option>
-  </select><br><br>
+    <title>Event Registration</title>
 
-    </form>
+    <!-- Correct jQuery import -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            // Example: show selected event
+            $("#event").change(function(){
+                alert("You selected: " + $(this).val());
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+
+<nav>
+    <a href="home.html">Home</a> |
+    <a href="events.html">Events</a> |
+    <a href="register.html">Register</a>
+</nav>
+
+<br>
+
+<form>
+    <label>Student Admission Number</label><br>
+    <input type="text" id="adm"><br><br>
+
+    <label>Name</label><br>
+    <input type="text" id="name"><br><br>
+
+    <label>Select Event</label><br>
+    <select id="event">
+        <option value="cultural">Cultural Week</option>
+        <option value="sports">Sports Day</option>
+        <option value="election">Students' Election</option>
+        <option value="tree">Tree Planting Day</option>
+    </select><br><br>
+
+    <button type="button" id="submitBtn">Submit</button>
+</form>
+
 </body>
 </html>
