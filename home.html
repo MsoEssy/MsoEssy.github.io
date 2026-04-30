@@ -34,9 +34,9 @@
 <br>
 
 <section class="banner"> 
-    <img class="slide" src="images/sports.png" alt="Sports">
-    <img class="slide" src="images/election.png" alt="Election">
-    <img class="slide" src="images/planting.png" alt="Planting">
+    <img class="slide" src="sports.png" alt="Sports">
+    <img class="slide" src="election.png" alt="Election">
+    <img class="slide" src="planting.png" alt="Planting">
 </section>
 
 <footer>
@@ -44,7 +44,7 @@
 
     <p>
         0952803901 ||
-        <img width="20" height="20" src="images/whatsapp2.png" alt="WhatsApp">
+        <img width="20" height="20" src="whatsapp2.png" alt="WhatsApp">
     </p>
 
     <p>Instagram | Facebook | WhatsApp</p>
@@ -54,21 +54,21 @@
     var i = 0;
 
     function slideshow() {
-        var slides = document.getElementsByClassName("slide");
+        let slides = document.getElementsByClassName("slide");
 
-        // Hide all images
-        for (var x = 0; x < slides.length; x++) {
+        // Hide all images,only one image is visible at a time
+        for (let x = 0; x < slides.length; x++) {
             slides[x].style.display = "none";
         }
-
+//moves to next image
         i++;
-
+//restarts the slide when it reaches the end
         if (i > slides.length) {
             i = 1;
         }
-
+//shows current page
         slides[i - 1].style.display = "block";
-
+//waits for two seconds
         setTimeout(slideshow, 2000);
     }
 
